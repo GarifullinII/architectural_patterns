@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CourseDetailsViewController: UIViewController {
 
+    @IBOutlet var courseNameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
