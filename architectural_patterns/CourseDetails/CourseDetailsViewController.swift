@@ -10,6 +10,11 @@ import UIKit
 class CourseDetailsViewController: UIViewController {
 
     @IBOutlet var courseNameLabel: UILabel!
+    @IBOutlet var numberOfLessonsLabel: UILabel!
+    @IBOutlet var numberOfTestsLabel: UILabel!
+    @IBOutlet var courseImage: UIImageView!
+    @IBOutlet var favoriteButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,5 +22,7 @@ class CourseDetailsViewController: UIViewController {
     }
 
 
+    @IBAction func toggleFavorite(_ sender: UIButton) {
+    }
 }
 
