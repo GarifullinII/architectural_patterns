@@ -16,6 +16,7 @@
 		6E3991D928F70A3900EA3ECD /* CourseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3991D828F70A3900EA3ECD /* CourseDetailsViewModel.swift */; };
 		6E3991DC28F70D3200EA3ECD /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3991DB28F70D3200EA3ECD /* Course.swift */; };
 		6E45FDC628FF1200008AF765 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E45FDC528FF1200008AF765 /* ImageManager.swift */; };
+		6E45FDC828FF192F008AF765 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E45FDC728FF192F008AF765 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6E3991D828F70A3900EA3ECD /* CourseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewModel.swift; sourceTree = "<group>"; };
 		6E3991DB28F70D3200EA3ECD /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		6E45FDC528FF1200008AF765 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		6E45FDC728FF192F008AF765 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				6E45FDC528FF1200008AF765 /* ImageManager.swift */,
+				6E45FDC728FF192F008AF765 /* DataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				6E3991C828F7079E00EA3ECD /* CourseDetailsViewController.swift in Sources */,
 				6E3991C428F7079E00EA3ECD /* AppDelegate.swift in Sources */,
 				6E3991DC28F70D3200EA3ECD /* Course.swift in Sources */,
+				6E45FDC828FF192F008AF765 /* DataManager.swift in Sources */,
 				6E45FDC628FF1200008AF765 /* ImageManager.swift in Sources */,
 				6E3991D928F70A3900EA3ECD /* CourseDetailsViewModel.swift in Sources */,
 				6E3991C628F7079E00EA3ECD /* SceneDelegate.swift in Sources */,

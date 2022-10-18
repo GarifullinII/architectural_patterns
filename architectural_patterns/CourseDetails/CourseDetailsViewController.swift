@@ -22,7 +22,8 @@ class CourseDetailsViewController: UIViewController {
             courseNameLabel.text = viewModel.courseName
             numberOfLessonsLabel.text = viewModel.numberOfLessons
             numberOfTestsLabel.text = viewModel.numberOfTests
-            
+            guard let imageData = viewModel.imageData else { return }
+            courseImage.image = UIImage(data: imageData)
         }
     }
     
@@ -31,6 +32,7 @@ class CourseDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = CourseDetailsViewModel(course: course)
+        loadFavoriteStatus()
         setupUI()
     }
 
@@ -41,10 +43,15 @@ class CourseDetailsViewController: UIViewController {
     }
     
     private func setupUI() {
-        
-        if let imageData = ImageManager.shared.fetchImageData(from: course.imageUrl) {
-            courseImage.image = UIImage(data: imageData)
-        }
+        setStatusForFavoriteButton()
+    }
+    
+    private func setStatusForFavoriteButton() {
+        favoriteButton.tintColor = isFavorite ? .red : .gray
+    }
+    
+    private func loadFavoriteStatus() {
+        isFavorite = DataManager.shared.getFavoriteStatus(for: course.name)
     }
 }
 
