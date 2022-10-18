@@ -15,14 +15,36 @@ class CourseDetailsViewController: UIViewController {
     @IBOutlet var courseImage: UIImageView!
     @IBOutlet var favoriteButton: UIButton!
     
+    var course: Course!
+    
+    var viewModel: CourseDetailsViewModelProtocol! {
+        didSet {
+            courseNameLabel.text = viewModel.courseName
+            numberOfLessonsLabel.text = viewModel.numberOfLessons
+            numberOfTestsLabel.text = viewModel.numberOfTests
+            
+        }
+    }
+    
+    private var isFavorite = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        viewModel = CourseDetailsViewModel(course: course)
+        setupUI()
     }
 
 
     @IBAction func toggleFavorite(_ sender: UIButton) {
+        isFavorite.toggle()
+        
+    }
+    
+    private func setupUI() {
+        
+        if let imageData = ImageManager.shared.fetchImageData(from: course.imageUrl) {
+            courseImage.image = UIImage(data: imageData)
+        }
     }
 }
 

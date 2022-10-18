@@ -45,7 +45,6 @@
             <objects>
                 <navigationController id="2U1-Mp-Ml5" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ur8-xn-ptA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
